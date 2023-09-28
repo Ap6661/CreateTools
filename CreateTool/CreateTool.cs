@@ -1,4 +1,4 @@
-using NeosModLoader;
+using ResoniteModLoader;
 using FrooxEngine;
 using System;
 using System.Collections.Generic;
@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace CreateTool
 {
-    public class CreateTool : NeosMod
+    public class CreateTool : ResoniteMod
     {
         public override string Name => "CreateTool";
         public override string Author => "APnda";
-        public override string Version => "1.0.0";
+        public override string Version => "2.0.0";
         
         public override string Link => "https://github.com/Ap6661/CreateTools";
 
@@ -35,7 +35,7 @@ namespace CreateTool
         {
             Engine.Current.RunPostInit(() =>
             {
-                GenerateToolCategory(WorkerInitializer.ComponentLibrary.GetSubcategory("Tools/Tooltips"), "Tools");
+                GenerateToolCategory(WorkerInitializer.ComponentLibrary.GetSubcategory("Tools"), "Tools");
                 GenerateToolCategory(WorkerInitializer.ComponentLibrary.GetSubcategory("Tools/Brushes"), "Tools/Brushes");
             });
         }
