@@ -10,7 +10,7 @@ namespace CreateTool
     {
         public override string Name => "CreateTool";
         public override string Author => "APnda";
-        public override string Version => "2.0.0";
+        public override string Version => "2.0.1";
         
         public override string Link => "https://github.com/Ap6661/CreateTools";
 
